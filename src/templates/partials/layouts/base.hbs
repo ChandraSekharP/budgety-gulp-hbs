@@ -1,0 +1,26 @@
+{{!-- layouts/base.hbs --}}
+
+<!doctype html>
+<html>
+  <head>
+    <title>
+        
+    </title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <form>
+        {{#> form-block}}
+            {{> includes/form }}
+        {{/form-block}}
+    </form>
+    <footer>
+        {{#> footer-block}}
+            {{> includes/footer }}
+        {{/footer-block}}
+    </footer>
+    {{#> scripts-block}}
+      {{!-- Custom scripts per page can be added. --}}
+    {{/scripts-block}}
+  </body>
+</html>
